@@ -1,0 +1,42 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.3
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hoek:20180212':
+    - node-clap > npm > request > hawk > hoek:
+        patched: '2019-05-04T00:54:52.547Z'
+    - node-clap > npm > request > hawk > sntp > hoek:
+        patched: '2019-05-04T00:54:52.547Z'
+    - node-clap > npm > node-gyp > request > hawk > hoek:
+        patched: '2019-05-04T00:54:52.547Z'
+    - node-clap > npm > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-05-04T00:54:52.547Z'
+    - node-clap > npm > node-gyp > request > hawk > boom > hoek:
+        patched: '2019-05-04T00:54:52.547Z'
+    - node-clap > npm > node-gyp > request > hawk > sntp > hoek:
+        patched: '2019-05-04T00:54:52.547Z'
+    - node-clap > npm > node-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-05-04T00:54:52.547Z'
+    - node-clap > npm > request > hawk > boom > hoek:
+        patched: '2019-05-04T00:54:52.547Z'
+  'npm:lodash:20180130':
+    - slap-util > lodash:
+        patched: '2019-05-04T00:54:52.547Z'
+    - base-widget > lodash:
+        patched: '2019-05-04T00:54:52.547Z'
+    - editor-widget > lodash:
+        patched: '2019-05-04T00:54:52.547Z'
+    - base-widget > slap-util > lodash:
+        patched: '2019-05-04T00:54:52.547Z'
+    - editor-widget > slap-util > lodash:
+        patched: '2019-05-04T00:54:52.547Z'
+    - editor-widget > base-widget > lodash:
+        patched: '2019-05-04T00:54:52.547Z'
+    - editor-widget > cheerio > lodash:
+        patched: '2019-05-04T00:54:52.547Z'
+    - editor-widget > base-widget > slap-util > lodash:
+        patched: '2019-05-04T00:54:52.547Z'
+  'npm:tunnel-agent:20170305':
+    - node-clap > npm > request > tunnel-agent:
+        patched: '2019-05-04T00:54:52.547Z'
