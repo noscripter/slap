@@ -11,7 +11,9 @@
     "start": "./slap.js",
     "debug": "node-debug ./slap.js",
     "test": "spec/index.js",
-    "cover": "istanbul cover spec/index.js"
+    "cover": "istanbul cover spec/index.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -28,15 +30,17 @@
     "lodash": "3.10.1",
     "mkdirp": "0.5.1",
     "node-clap": "0.0.5",
-    "rc": "1.1.6",
+    "rc": "1.2.7",
     "slap-util": "1.0.6",
     "ttys": "0.0.3",
-    "update-notifier": "0.6.0"
+    "update-notifier": "0.6.0",
+    "snyk": "^1.104.2"
   },
   "devDependencies": {
     "get-random-port": "0.0.1",
     "istanbul": "0.4.1",
     "node-inspector": "0.12.5",
     "tape": "4.4.0"
-  }
+  },
+  "snyk": true
 }
